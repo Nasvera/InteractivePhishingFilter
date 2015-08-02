@@ -104,8 +104,8 @@ try {
 
 
     //echo "Rushikesh";
-    $file = fopen('Data/verified_online_udpated.json','r');
-    $file_content = fread($file,filesize('Data/verified_online_udpated.json'));
+    $file = fopen('../Data/verified_online_udpated.json','r');
+    $file_content = fread($file,filesize('../Data/verified_online_udpated.json'));
     fclose($file);
     $json_Read = new JsonReadLib();
     $parameters = $json_Read->jsonRead($file_content);
@@ -113,23 +113,23 @@ try {
     //print_r($parameters);
 
 
-    $new_file = fopen("Data/phishing_parameters_for_weka.json.txt","w");
+    $new_file = fopen("../Data/phishing_parameters_for_weka.json","w");
     $parameters = json_encode($parameters);
     /*echo "<pre>";
     var_dump($parameters);*/
-    /*fwrite($new_file, $parameters);
-    fclose($new_file);*/
+    fwrite($new_file, $parameters);
+    fclose($new_file);
 
 
     $arff_String = $json_Read->jsontoString($parameters);
-    $new_file = fopen("Data/myfile.arff.txt","w");
+    $new_file = fopen("../Data/myfile.arff.txt","w");
     fwrite($new_file, $arff_String);
     fclose($new_file);
 
     $arrf = new ArffConverter();
     $arff_String = $arrf->getHeader();
     $arff_String .= $json_Read->jsontoString($parameters);
-    $new_file = fopen("Data/phishing_wihoutInteger.arff","w");
+    $new_file = fopen("../Data/phishing.arff","w");
     fwrite($new_file, $arff_String);
     fclose($new_file);
 
