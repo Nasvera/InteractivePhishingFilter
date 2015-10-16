@@ -1,0 +1,15 @@
+@relation Phishing.Detection
+
+@attribute protocol {http,https,other}
+@attribute FrequentTermsvsRegistrant integer
+@attribute NOofDomainNamecandidatesinHostnameandContent integer
+@attribute NOofDomainNamecandidatesinHostname integer
+@attribute NumericHostname {true,false}
+@attribute TitlevsRegistrant integer
+@attribute TitlevsDomainNamecandidatesinHostname integer
+@attribute FrequentTermsvsHostDomain integer
+@attribute CopyrightvsRegistrant integer
+@attribute DomainNamecandidatesinAnchorsvsRegistrant integer
+@attribute phising {true,false}
+@data 
+

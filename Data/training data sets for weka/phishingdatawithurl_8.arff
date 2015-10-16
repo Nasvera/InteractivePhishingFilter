@@ -1,0 +1,107 @@
+@relation Phishing.Detection
+
+@attribute protocol {http,https,other}
+@attribute FrequentTermsvsRegistrant integer
+@attribute NOofDomainNamecandidatesinHostnameandContent integer
+@attribute NOofDomainNamecandidatesinHostname integer
+@attribute NumericHostname {true,false}
+@attribute TitlevsRegistrant integer
+@attribute TitlevsDomainNamecandidatesinHostname integer
+@attribute FrequentTermsvsHostDomain integer
+@attribute CopyrightvsRegistrant integer
+@attribute DomainNamecandidatesinAnchorsvsRegistrant integer
+@attribute phising {true,false}
+@data 
+https://www.google.com,https,5.0,11,11,false,5.0,10.0,6.0,7.0,11.0,false
+https://login.yahoo.com/config/mail?&.src=ym&.intl=in,https,6.0,9,9,false,14.0,14.0,6.0,-1.0,12.0,false
+https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=http%3A%2F%2Fwww.ebay.com%2F,https,7.0,10,10,false,25.0,31.0,6.0,5.0,13.0,false
+https://reg.ebay.com/reg/PartialReg?siteid=0&UsingSSL=1&co_partnerId=2&rv4=1,https,5.0,12,12,false,22.0,29.0,6.0,5.0,13.0,false
+https://www.wellsfargo.com,https,16.0,11,11,false,87.0,100.0,11.0,18.0,23.0,false
+https://online.wellsfargo.com/das/channel/enrollDisplay,https,18.0,0,0,false,18.0,19.0,12.0,-1.0,-1.0,false
+https://www.drupal.org/user,https,10.0,5,5,false,42.0,30.0,2.0,-1.0,18.0,false
+https://www.hackerrank.com/login,https,13.0,0,0,false,44.0,39.0,12.0,-1.0,-1.0,false
+https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=usflex&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fgw%2Fajax%2Fs.html%3Fref_%3Dnav_signin,https,23.0,4,4,false,29.0,14.0,3.0,21.0,25.0,false
+https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://drive.google.com/%23&followup=https://drive.google.com/&ltmpl=drive&emr=1#identifier,https,5.0,8,8,false,45.0,57.0,6.0,-1.0,11.0,false
+https://www.creditkarma.com,https,9.0,13,13,false,68.0,73.0,9.0,12.0,16.0,false
+https://www.whoisxmlapi.com/login.php,https,8.0,93,93,false,17.0,23.0,12.0,-1.0,19.0,false
+https://idmsa.apple.com/IDMSWebAuth/login.html?appIdKey=af1139274f266b22b68c2a3e7ad932cb3c0bbe854e13a79af78dcc73136882c3&path=/signin/?referrer%3D/account/manage&sslEnabled=true,https,5.0,12,11,false,15.0,26.0,6.0,5.0,11.0,false
+https://appleid.apple.com/account,https,5.0,17,14,false,12.0,21.0,6.0,5.0,11.0,false
+https://www.discovercard.com/cardmembersvcs/loginlogout/app/ac_main?ICMPGN=HDR_LOGN_CC_LOGN&mboxSession=1443308469037-657292,https,14.0,10,10,false,62.0,54.0,14.0,-1.0,20.0,false
+https://online.americanexpress.com/myca/oce/us/action/register?request_type=un_Register&Face=en_US&Face=en_US&linknav=us-homepage-createnewaccount&regSrc=logon,https,10.0,103,103,false,47.0,43.0,17.0,12.0,17.0,false
+https://online.americanexpress.com/myca/fuidfyp/us/action/fuidfyp?request_type=un_fuid&Face=en_US&entry_point=lnk_fuid&linknav=us-homepage-fyidpw,https,10.0,100,100,false,58.0,54.0,17.0,12.0,16.0,false
+http://www.codeproject.com/script/Membership/SendPassword.aspx?rp=%2f,http,12.0,6,6,false,37.0,32.0,13.0,13.0,25.0,false
+https://www.vodafone.co.uk/myvodafone/faces/oracle/webcenter/portalapp/pagehierarchy/Page1.jspx#%40%3F_adf.ctrl-state%3D11s3gn0gxk_9,https,37.0,0,0,false,37.0,16.0,3.0,-1.0,-1.0,false
+https://www.walmart.com/account/login,https,18.0,121,121,false,20.0,10.0,9.0,14.0,21.0,false
+https://www.dominos.com/en/pages/customer/#/customer/profile/new,https,17.0,0,0,false,64.0,56.0,2.0,-1.0,-1.0,false
+https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F,https,3.0,0,0,false,3.0,15.0,6.0,-1.0,-1.0,false
+https://www.netflix.com/Login?locale=en-US,https,6.0,5,5,false,51.0,55.0,6.0,5.0,12.0,false
+https://twitter.com/signup,https,6.0,12,12,false,18.0,18.0,6.0,-1.0,12.0,false
+https://instagram.com,https,5.0,0,0,false,5.0,6.0,6.0,-1.0,-1.0,false
+https://cmshr.cms.sjsu.edu/psp/HSJPRD/?cmd=login&languageCd=ENG&,https,23.0,1,1,false,43.0,36.0,6.0,26.0,-1.0,false
+http://www.pinger.com/tfw/,http,9.0,5,5,false,63.0,66.0,8.0,4.0,11.0,false
+https://www.amazon.com/ap/signin?openid.assoc_handle=aws&openid.return_to=https%3A%2F%2Fsignin.aws.amazon.com%2Foauth%3Fresponse_type%3Dcode%26client_id%3Darn%253Aaws%253Aiam%253A%253A015428540659%253Auser%252Fawssignupportal%26redirect_uri%3Dhttps%253A%252F%252Fportal.aws.amazon.com%252Fbilling%252Fsignup%253Fredirect_url%253Dhttps%25253A%25252F%25252Faws.amazon.com%25252Fregistration-confirmation%2526state%253DhashArgs%252523%2526isauthcode%253Dtrue%26noAuthCookie%3Dtrue&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&action=&disableCorpSignUp=&clientContext=&marketPlaceId=&poolName=&authCookies=&pageId=aws.ssop&siteState=pre-register%2Cen_US&accountStatusPolicy=P1&sso=&openid.pape.preferred_auth_policies=MultifactorPhysical&openid.pape.max_auth_age=120&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&server=%2Fap%2Fsignin%3Fie%3DUTF8&accountPoolAlias=&forceMobileApp=0&language=en_US&forceMobileLayout=0,https,19.0,8,8,false,36.0,31.0,6.0,21.0,25.0,false
+https://www.yelp.com/login?return_url=%2Fsan-jose,https,5.0,9,9,false,12.0,19.0,6.0,5.0,10.0,false
+https://retail.onlinesbi.com/retail/login.htm,https,17.0,10,10,false,53.0,54.0,11.0,17.0,20.0,false
+https://login.livingsocial.com/?return_to=https://www.livingsocial.com/things-to-do/wichita,https,4.0,2,2,false,4.0,18.0,12.0,-1.0,16.0,false
+https://www.ncrowd.com/login,https,18.0,1,1,false,26.0,6.0,2.0,-1.0,25.0,false
+https://www.tigerdirect.com/secure/orderlogin.asp?PG=1,https,15.0,12,12,false,24.0,26.0,13.0,13.0,18.0,false
+https://finance.yahoo.com/news/wall-street-braces-grim-third-224205317.html,https,9.0,69,69,false,74.0,74.0,7.0,11.0,12.0,false
+https://secure.bankofamerica.com/login/sign-in/signOnScreen.go,https,13.0,6,6,false,39.0,64.0,15.0,-1.0,18.0,false
+https://account.t-mobile.com/oauth2/v1/auth?redirect_uri=https%3A%2F%2Fmy.t-mobile.com&scope=TMO_ID_profile%20associated_lines%20billing_information&client_id=A-3amGd14-iz0&access_type=ONLINE&response_type=code&approval_prompt=auto&state=false,https,10.0,25,24,false,19.0,21.0,10.0,12.0,20.0,false
+https://www.att.com,https,15.0,60,59,false,66.0,64.0,5.0,15.0,22.0,false
+https://www.icloud.com,https,5.0,0,0,false,12.0,12.0,8.0,5.0,-1.0,false
+https://login.comcast.net/login?r=comcast.net&s=oauth&continue=https%3A%2F%2Flogin.comcast.net%2Foauth%2Fauthorize%3Fresponse_type%3Dcode%26redirect_uri%3Dhttp%253A%252F%252Fmy.xfinity.com%252Foauth%252Fcallback%26client_id%3DXfinity-Portal%26state%3Dhttp%253A%252F%252Fmy.xfinity.com%252F%253Fcid%253Dcust%2526amcid%253DSEG_MYACCOUNT%26response%3D1&reqId=8ad13e33-759f-4042-aa19-8b86c4d8d117&client_id=Xfinity-Portal&passive=0&forceAuthn=0,https,20.0,3,3,false,37.0,34.0,6.0,20.0,25.0,false
+https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Main+Page,https,10.0,3,3,false,47.0,41.0,6.0,-1.0,21.0,false
+https://login.oracle.com/mysso/signon.jsp,https,12.0,20,20,false,34.0,30.0,6.0,-1.0,16.0,false
+https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1443313053&rver=6.5.6509.0&wp=SAPI&wreply=https:%2F%2Fwww.microsoftstore.com%2Fstore%2Fmsusa%2Fen_US%2FDisplayEditProfilePage%2F%3Fwlsid%3D9D4DCC6F029044509BA3090898B80621&lc=1033&id=273461&mkt=en-US,https,12.0,0,0,false,34.0,43.0,6.0,-1.0,-1.0,false
+https://gam-secure.target.com/gam-webapp/login,https,12.0,6,6,false,34.0,40.0,2.0,-1.0,19.0,false
+https://www-ssl.bestbuy.com/identity/signin?token=og9VhE%2F3bLJtWZpFPr5HUtkpAX8XSgLrJiL0mBJSFECxA3LwmcKyekyXctTjpsG70v24md0j1uX2xRqYe%2F0%2Fx0aqVvrF9BScqTCrz7JM2Z2kniX2X55KHJxoRYsB8yHtbIevtPt6%2F5cILw7xiUsQ1GRkL0JnuanhBUnacxdmFHQiZAnvlcrPU2LcFZUK3Eqlon6ZzYkLLr3zL26zeY36cRTbI1lm4IQwwwLPgK3LviY%3D,https,17.0,4,4,false,19.0,19.0,9.0,-1.0,26.0,false
+https://www.officedepot.com/account/loginAccountSet.do,https,12.0,32,32,false,48.0,59.0,11.0,12.0,19.0,false
+https://github.com,https,6.0,28,28,false,32.0,38.0,8.0,5.0,18.0,false
+https://www.paypal.com/signin/?country.x=US&locale.x=en_US,https,5.0,2,2,false,9.0,12.0,8.0,-1.0,-1.0,false
+https://venmo.com,https,5.0,4,4,false,22.0,23.0,6.0,4.0,11.0,false
+https://sso.trinet.com/auth/cdcservlet?realm=sw_hrp&goto=https%3A%2F%2Fwww.hrpassport.com%3A443%2FLink2HR.eng%3F%2FSaf%2FEntry%2FPortal.htm%26product%3Dpassport&RequestID=3226&MajorVersion=1&MinorVersion=0&ProviderID=https%3A%2F%2Fwww.hrpassport.com%3A443%2Famagent%3FRealm%3D%2Fsw_hrp&IssueInstant=2015-09-26T20%3A22%3A04Z,https,20.0,3,3,false,27.0,25.0,8.0,-1.0,32.0,false
+https://myturbotax.intuit.com,https,5.0,4,4,false,74.0,78.0,6.0,-1.0,11.0,false
+https://www.reddit.com/r/funny/,https,8.0,217,217,false,11.0,15.0,8.0,6.0,9.0,false
+https://www.quora.com/What-are-the-funniest-and-most-creative-ways-to-propose-marriage,https,8.0,13,13,false,74.0,78.0,7.0,-1.0,12.0,false
+https://www.quora.com,https,6.0,4,4,false,13.0,17.0,6.0,-1.0,12.0,false
+http://www.apple.com/shop/buy-watch/apple-watch/38mm-stainless-steel-case-with-productred-sport-band?product=MLLD2LL/A&step=detail,http,5.0,68,67,false,74.0,81.0,6.0,5.0,11.0,false
+https://www.hipchat.com/sign_in,https,11.0,1,1,false,26.0,26.0,9.0,12.0,14.0,false
+https://slack.com/signin,https,11.0,13,13,false,21.0,16.0,6.0,-1.0,17.0,false
+http://www.pandora.com/account/sign-in,http,11.0,12,12,false,57.0,60.0,6.0,11.0,17.0,false
+https://www.facebook.com,https,6.0,16,16,false,24.0,30.0,6.0,14.0,12.0,false
+https://login.skype.com/login?client_id=360605&redirect_uri=https%3A%2F%2Fsecure.skype.com%2Fportal%2Flogin&username=rotate2010&message=logged_out,https,0.0,34,34,false,23.0,35.0,6.0,0.0,6.0,false
+https://www.chase.com,https,15.0,74,74,false,64.0,63.0,6.0,12.0,21.0,false
+https://www.click2sell.eu/login-click2sell.html,https,12.0,28,28,false,27.0,22.0,11.0,13.0,22.0,false
+https://www.airbnb.com/getaways/South-Bay--CA?destination=Santa-Cruz,https,6.0,4,4,false,44.0,48.0,6.0,5.0,12.0,false
+https://usa.visa.com/about-visa.html,https,18.0,14,14,false,39.0,29.0,6.0,-1.0,24.0,false
+https://apply.braintreegateway.com/signup/us,https,9.0,3,3,false,16.0,19.0,18.0,9.0,14.0,false
+https://www.irctc.co.in/eticketing/loginHome.jsf,https,48.0,109,109,false,72.0,50.0,3.0,49.0,52.0,false
+https://prwc.adp.com/iprwc/default.asp,https,7.0,14,14,false,23.0,26.0,5.0,5.0,12.0,false
+https://www.econsumer.equifax.com/otc/showmyequifax.ehtml,https,4.0,9,9,false,96.0,112.0,6.0,-1.0,10.0,false
+https://membership.tui.transunion.com/tucm/login.page?CID=TransUnion:PHP:Login,https,9.0,1,1,false,74.0,92.0,12.0,-1.0,19.0,false
+https://online.citi.com/US/Welcome.c,https,10.0,44,44,false,66.0,73.0,6.0,13.0,15.0,false
+https://www.linkedin.com,https,10.0,36,36,false,49.0,53.0,10.0,11.0,19.0,false
+https://www.samsung.com/us/support/account/,https,19.0,27,27,false,24.0,10.0,6.0,14.0,27.0,false
+https://www.dell.com/identity/global/login?connectionId=98254675-AC6F-47D9-A7E4-4537724F135D&wreply=http%3a%2f%2fwww.dell.com%2fen-us%2fhome%2f&showCreateAccount=false&showsocialsignin=true&c=us&l=en&~ck=mn,https,5.0,13,13,false,14.0,21.0,6.0,5.0,11.0,false
+https://store.hp.com/webapp/wcs/stores/servlet/LogonForm?catalogId=10051&langId=-1&storeId=10151&krypto=eEjMCsLuLV9Bwp95jVcf4GcFr7PVq1dpiA3IafLWaeQpHrsXSSE3HhcVA5%2FMFEVbj1Q%2F7wvykz3q%0AttOF4UzFsg%3D%3D&ddkey=http:LogonForm,https,18.0,5,5,false,23.0,15.0,4.0,-1.0,22.0,false
+https://shop.lenovo.com/SEUILibrary/controller/e/web/LenovoPortal/en_US/account.workflow:StartMyAccount?shopping-menu-selected-line=cart&menu-id=account,https,16.0,11,11,false,29.0,24.0,6.0,-1.0,22.0,false
+https://login.splunk.com/index.php?module=roles&func=showloginform&redirecturl=http://www.splunk.com/,https,4.0,159,159,false,12.0,21.0,6.0,4.0,10.0,false
+https://sso.godaddy.com/?path=sso%2Freturn&app=www,https,18.0,44,44,false,22.0,17.0,9.0,-1.0,27.0,false
+https://my.gogrid.com,https,11.0,5,5,false,52.0,50.0,8.0,-1.0,19.0,false
+https://www.ibm.com/account/profile/us?page=signinview&lnk=msi,https,10.0,9,9,false,24.0,26.0,5.0,-1.0,16.0,false
+https://www.axisbank.co.in/BankAway/(S(phkpx545425map3hd5huvuik))/web/L001/retail/jsp/user/RetailSignOn.aspx?RequestId=30702499,https,15.0,0,0,false,21.0,22.0,3.0,-1.0,-1.0,false
+https://www.us.hsbc.com/1/2/home/personal-banking,https,12.0,28,28,false,33.0,34.0,6.0,14.0,15.0,false
+https://www.phishtank.com/developer_info.php,https,10.0,1,1,false,39.0,40.0,8.0,-1.0,17.0,false
+https://shop4.frys.com//wf?a%3DLOGIN_ACCOUNT_FROM_CART%2Cw%3DCHECKOUT=1&PAVANPUTRA=aa1bc1&idckot=412530454:23bc90ef:1500c0c662c:-4e45,https,12.0,491,491,false,12.0,12.0,6.0,11.0,18.0,false
+https://account.asus.com/loginform.aspx?skey=cdc71982c254416aa02b34593cb2e3c3,https,7.0,2,2,false,23.0,22.0,6.0,-1.0,13.0,false
+https://www.expedia.com/user/signin?ckoflag=0,https,10.0,6,6,false,13.0,18.0,9.0,-1.0,11.0,false
+https://secure.yatra.com/social/common/yatra/signin,https,15.0,45,45,false,21.0,21.0,6.0,-1.0,21.0,false
+https://login.microsoftonline.com,https,18.0,7,7,false,35.0,42.0,17.0,12.0,24.0,false
+https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1443319152&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fonedrive.live.com%2F%3Flc%3D1033%26mkt%3Den-US&lc=1033&id=250206&cbcxt=sky&mkt=en-US&lw=1&fl=easi2,https,18.0,0,0,false,24.0,16.0,6.0,-1.0,-1.0,false
+https://www.dropbox.com/developers,https,6.0,22,22,false,19.0,23.0,6.0,-1.0,12.0,false
+https://spideroak.com/browse/login/storage,https,6.0,0,0,false,121.0,127.0,11.0,5.0,18.0,false
+https://www.wuala.com/en/purchase/storage/plan/5+GB,https,6.0,16,16,false,74.0,75.0,6.0,6.0,9.0,false
+https://secure-www.gap.com/profile/sign_in.do,https,5.0,14,12,false,13.0,24.0,5.0,6.0,12.0,false
+https://www.hollisterco.com/webapp/wcs/stores/servlet/AccountRouterView?catalogId=10201&langId=-1&storeId=10251&krypto=QtQCTroYOoj28jbXzj83wHDlT1SXMA2MFN3GB4EBHDIbTvS8BfA%2BRSA%2FWaMkMNoox4blnIxAcbZJObMmEcinYWAq2RGsiiwJwOznOUrVr2PD3pN6y2sbJLEAUUqz2vVr&ddkey=http%3AAccountRouterView,https,12.0,6,6,false,25.0,12.0,13.0,-1.0,19.0,false
+

@@ -1,0 +1,94 @@
+@relation Phishing.Detection
+
+@attribute protocol {http,https,other}
+@attribute FrequentTermsvsRegistrant integer
+@attribute NOofDomainNamecandidatesinHostnameandContent integer
+@attribute NOofDomainNamecandidatesinHostname integer
+@attribute NumericHostname {true,false}
+@attribute TitlevsRegistrant integer
+@attribute TitlevsDomainNamecandidatesinHostname integer
+@attribute FrequentTermsvsHostDomain integer
+@attribute CopyrightvsRegistrant integer
+@attribute DomainNamecandidatesinAnchorsvsRegistrant integer
+@attribute phising {true,false}
+@data 
+http://www.riva-properties.com/Anthony/doc,http,17.0,1,1,false,26.0,30.0,17.0,-1.0,-1.0,true
+http://galsgoodies.com/8x8.htm,http,12.0,0,0,false,36.0,37.0,13.0,-1.0,-1.0,true
+http://infor-ariesjeff.com/Access-docs,http,21.0,0,0,false,21.0,17.0,17.0,-1.0,-1.0,true
+http://www.stevenfossphotography.com/wp-admin/includes/FOX/,http,9.0,1,1,false,16.0,34.0,23.0,-1.0,-1.0,true
+http://styx-river.com/public/files/products/specsheet/bookmark/ii.php?email=eqhoyk%20at%20lubberly.com&amp;.rand=13vqcr8bp0gud&amp;lc=1033&amp;id=64855&amp;mkt=en-us&amp;cbcxt=mai&amp;snsc=1,http,14.0,1,1,false,34.0,32.0,12.0,-1.0,-1.0,true
+http://www.pasticceriaspigadoro.it/wp-content/cache/IMP,http,9.0,0,0,false,34.0,50.0,21.0,10.0,-1.0,true
+http://braslimnpi.com/azul/,http,19.0,0,0,false,19.0,12.0,12.0,-1.0,-1.0,true
+http://fans4fun.org/4fun/CADASTRO/GanhePremios/CadastroCielo2015/,http,17.0,0,0,false,33.0,29.0,13.0,-1.0,-1.0,true
+http://www.banoota.me/mydoc/auth/view/document/,http,7.0,0,0,false,7.0,12.0,8.0,-1.0,-1.0,true
+http://chewdogrescue.org/misc/aut/auth/view/document/,http,18.0,2,2,false,28.0,25.0,15.0,-1.0,26.0,true
+http://chewdogrescue.org/misc/aut/auth/view/document,http,18.0,2,2,false,28.0,25.0,15.0,-1.0,26.0,true
+http://novobrasilimp.com/profile/azul/,http,19.0,0,0,false,19.0,15.0,15.0,-1.0,-1.0,true
+http://ferroforja.cl/po/,http,-1.0,1,1,false,-1.0,26.0,11.0,-1.0,-1.0,true
+http://ferroforja.cl/po,http,-1.0,1,1,false,-1.0,26.0,11.0,-1.0,-1.0,true
+http://styx-river.com/public/files/products/specsheet/bookmark/ii.php?email=eqhoyk%20at%20lubberly.com,http,14.0,1,1,false,34.0,32.0,12.0,-1.0,-1.0,true
+http://advokatskafirmasajic.com/img/EmailSurvey/ozor/ii.php?.rand=13InboxLight.aspx?n=1774256418&amp;email=&amp;fav.1=&amp;fid=1&amp;fid=4&amp;fid.1=&amp;fid.1252899642=&amp;fid.4.1252899642=&amp;rand=13InboxLightaspxn.1774256418&amp;rand.13InboxLight.aspxn.1774256418=,http,7.0,1,1,false,27.0,42.0,22.0,-1.0,-1.0,true
+http://www.blizzardgmail-battle.com/login/en_login/?ref=https://us.battle.net/account/management/index.html,http,10.0,0,0,false,32.0,40.0,22.0,12.0,18.0,true
+http://ferroforja.cl/p,http,-1.0,1,1,false,-1.0,26.0,11.0,-1.0,-1.0,true
+http://for-y-o-u.com/1/,http,9.0,0,0,false,56.0,56.0,10.0,-1.0,-1.0,true
+http://siddhanthsisodia.com/phpqrcode/file/files/db/file.dropbox/,http,15.0,1,1,false,28.0,33.0,18.0,-1.0,-1.0,true
+http://cristi-design.ro/a-dropbox/dropbox/index.php,http,-1.0,1,1,false,-1.0,27.0,12.0,-1.0,-1.0,true
+http://trutein.com/biz/online/order.php?.rand=13InboxLight.aspx?n=1774256418,http,9.0,1,1,false,29.0,30.0,10.0,-1.0,-1.0,true
+http://www.trutein.com/biz/online/order.php?rand=13InboxLightaspxn.1774256418&amp;fid.4.1252899642&amp;fid=1&amp;fav.1&amp;rand.13InboxLight.aspxn.1774256418&amp;fid.1252899642&amp;fid.1&amp;fav.1&amp;email=&amp;.rand=13InboxLight.aspx?n=1774256418&amp;fid=4,http,9.0,1,1,false,29.0,34.0,10.0,-1.0,-1.0,true
+http://ahaprint.de/apple,http,-1.0,0,0,false,-1.0,9.0,9.0,-1.0,-1.0,true
+http://chinodesignsnyc.com/libraries/joomla/language/help/dropbox/index.php,http,18.0,0,0,false,35.0,2.0,2.0,-1.0,26.0,true
+http://golden-corner.com/make/bookmark/ii.php,http,8.0,1,1,false,91.0,98.0,15.0,10.0,11.0,true
+http://bankofamerica.com.login.informtion.update.informtion.oxyrio.com.br/new/update.bankofamerica.com.system.new.billpay/prospect.php?_nfpb=login,http,26.0,1,1,false,55.0,85.0,4.0,27.0,35.0,true
+http://www.monteserrathotel.com.br/images/00991130/g-doc-secure/7089f4584fa63247b5c15164c089f79d/,http,26.0,1,1,false,35.0,34.0,4.0,-1.0,-1.0,true
+http://dmphms.com/share-files/dropbox/,http,10.0,5,5,false,25.0,23.0,8.0,-1.0,-1.0,true
+http://www.cristi-design.ro/a-dropbox/dropbox/,http,-1.0,1,1,false,-1.0,31.0,12.0,-1.0,-1.0,true
+http://www.golden-corner.com/images/products/wap/Alibaba.html,http,8.0,1,1,false,91.0,102.0,15.0,9.0,11.0,true
+http://amittravel.net/news/yahoo.html,http,-1.0,0,0,false,-1.0,12.0,12.0,-1.0,-1.0,true
+http://bankofamerica.com.login.informtion.update.informtion.oxyrio.com.br/new/update.bankofamerica.com.system.new.billpay/,http,26.0,0,0,false,26.0,64.0,4.0,-1.0,-1.0,true
+http://image-web.net/plugins/countto/Doc/index.htm,http,15.0,5,5,false,33.0,29.0,11.0,15.0,23.0,true
+http://greenbeautyfarmsnoidaexpressway.com/england/dropbox/,http,4.0,1,1,false,19.0,48.0,33.0,-1.0,-1.0,true
+http://www.informatidanoi.com/PerHomeDeal/,http,13.0,5,5,false,27.0,35.0,17.0,-1.0,-1.0,true
+http://chinodesignsnyc.com/libraries/bitfolge/dropbox/,http,18.0,0,0,false,35.0,2.0,2.0,-1.0,26.0,true
+http://chinodesignsnyc.com/libraries/bitfolge/dropbox,http,18.0,0,0,false,35.0,2.0,2.0,-1.0,26.0,true
+http://www.serranocatering.ca/,http,-1.0,0,0,false,-1.0,20.0,16.0,-1.0,-1.0,true
+http://deverity.1gh.in/Dhl/Dhl/Dhll/Dhl/ddl/dhl.htm,http,8.0,0,0,false,25.0,30.0,4.0,-1.0,-1.0,true
+http://textil-grosshandel.eu/bestand/includes/MSN/,http,12.0,39,39,false,58.0,51.0,19.0,-1.0,26.0,true
+http://jimenaaznar.com/milos/www.dropbox.com/,http,7.0,1,1,false,25.0,28.0,13.0,-1.0,-1.0,true
+http://www.ferroforja.cl/po/,http,-1.0,1,1,false,-1.0,30.0,11.0,-1.0,-1.0,true
+https://p3plcpnl0542.prod.phx3.secureserver.net/~lzadmin/wp-content/Confirm/login/mpp/,https,18.0,0,0,false,18.0,37.0,14.0,-1.0,-1.0,true
+http://bypiders.com/mail/yah/index.html,http,0.0,1,1,false,36.0,46.0,10.0,2.0,7.0,true
+http://www.chefscuisiniersain.fr/components/com_finder/models/chalogon2.php,http,12.0,1,1,false,31.0,42.0,19.0,-1.0,19.0,true
+http://www.korsec.pl/wp-includes/file/files/db/file.dropbox/,http,-1.0,1,1,false,-1.0,26.0,7.0,-1.0,-1.0,true
+http://davisexecassoc.com/wp-content/themes/GamesAwe/images/bookmark/,http,11.0,1,1,false,31.0,36.0,16.0,-1.0,-1.0,true
+http://owa77.jimdo.com,http,8.0,7,7,false,29.0,28.0,7.0,-1.0,11.0,true
+http://www.panevino.us/darasinmioluwa/,http,10.0,5,5,false,18.0,22.0,10.0,-1.0,-1.0,true
+http://www.dynamics.se/zoollaol/luauuapp/sllllapppl/aooppppl/,http,-1.0,2,2,false,-1.0,23.0,9.0,-1.0,-1.0,true
+http://5em1digital.com/obrigado/index.php,http,15.0,0,0,false,56.0,54.0,12.0,-1.0,-1.0,true
+http://www.wellsgraycountry.ca/administrator/yahoo/config/,http,35.0,1,1,false,71.0,57.0,17.0,37.0,42.0,true
+http://www.monteserrathotel.com.br/11300099111/g-doc-secure/dcdd4c6221bfad8b98adf2f0b37be764/,http,26.0,1,1,false,35.0,34.0,4.0,-1.0,-1.0,true
+http://www.monteserrathotel.com.br/images/00991130/g-doc-secure/1078f420acca11483aaeb621ca7be30a,http,26.0,1,1,false,35.0,34.0,4.0,-1.0,-1.0,true
+http://cfygettysburg.com/lang/ii/index.htm,http,7.0,1,1,false,35.0,43.0,15.0,8.0,10.0,true
+http://kevinwoodsmachinery.ie/authentication/drpbox/view,http,75.0,1,1,false,90.0,35.0,20.0,-1.0,-1.0,true
+http://www.filleacgil.it/nazionale/components/com_mailto/assets/pulign/e09c80b253ece3ab62989e3debea3bfd/Processing.php?cmd=_Processing&amp;dispatch=5885d80a13c0db1fb6947b0aeae66fdbfb2119927117e3a6f876e0fd34af436581049e8489732a495534aff471eee2fd81049e8489732a495534aff471eee2fd,http,11.0,0,0,false,48.0,52.0,11.0,-1.0,19.0,true
+http://www.myclouddoor.com/tsa/75c61506fd8084219165bbe0d30c67df/,http,12.0,0,0,false,25.0,6.0,2.0,-1.0,20.0,true
+http://novospremios.com/,http,13.0,0,0,false,27.0,29.0,15.0,-1.0,-1.0,true
+http://www.barizzaimoveis.com.br/z.php,http,-1.0,0,0,false,-1.0,23.0,4.0,-1.0,-1.0,true
+http://www.filleacgil.it/nazionale/components/com_mailto/assets/pulign/28ad608de3e703576d64741da1e61762/Processing.php?cmd=_Processing&amp;dispatch=5885d80a13c0db1fb6947b0aeae66fdbfb2119927117e3a6f876e0fd34af43659e80995b94e13ffdcdce030b4fb567549e80995b94e13ff,http,11.0,0,0,false,48.0,52.0,11.0,-1.0,19.0,true
+http://www.bartbreeze.com/administrator/acessar/,http,23.0,0,0,false,30.0,27.0,16.0,-1.0,-1.0,true
+http://www.khdmconstruction.com/flex/contact.html,http,11.0,1,1,false,20.0,31.0,18.0,-1.0,-1.0,true
+http://doangia-electric.com/hinhanh/sanpham/MicrosoftEmailUpgrade.html,http,15.0,1,1,false,60.0,63.0,18.0,17.0,-1.0,true
+http://www.servicecommand.biz/googledoc.html/document/secured/,http,5.0,1,1,false,29.0,44.0,16.0,-1.0,12.0,true
+http://www.bharathitrustorganic.org/administrator/includes/fm1ff868fc91abd1e28149c9b13f1250622ff868fc91abd1e28149c9b13f12506221/,http,5.0,1,1,false,8.0,29.0,22.0,-1.0,12.0,true
+http://www.mcmahandrycleaners.com/logs/Privat_Bank/html/www.itau.com.br/,http,12.0,0,0,false,32.0,44.0,20.0,-1.0,-1.0,true
+http://www.rosarioquimica.com.br/wp-includes/mgs/es/,http,14.0,1,1,false,23.0,32.0,4.0,-1.0,-1.0,true
+http://styx-river.com/public/files/products/specsheet/bookmark/ii.php,http,14.0,1,1,false,34.0,32.0,12.0,-1.0,-1.0,true
+http://www.skaterti.com.ua/uploads/images/db/box,http,19.0,0,0,false,33.0,32.0,5.0,-1.0,-1.0,true
+http://222hermann.com/wp-content/edoc/doc/hkkk/db/,http,10.0,1,1,false,25.0,27.0,12.0,-1.0,-1.0,true
+http://bharathitrustorganic.org/administrator/modules/LOGIN/fm10c6b7b296eba13eb2792ac33c36c6fb90c6b7b296eba13eb2792ac33c36c6fb92/fm1/WebObjects/iTunesConnect.html,http,5.0,1,1,false,17.0,34.0,22.0,7.0,12.0,true
+http://greenbeautyfarmsnoidaexpressway.com/oman/dropbox/index.php,http,4.0,1,1,false,19.0,48.0,33.0,-1.0,-1.0,true
+http://hallemeesch.net/bottominner/godwin,http,6.0,0,0,false,21.0,28.0,13.0,-1.0,-1.0,true
+http://222hermann.com/wp-includes/Text/luck/doc/hkkk/db/,http,10.0,1,1,false,25.0,27.0,12.0,-1.0,-1.0,true
+http://www.nickiphilipspilates.co.uk/mis/,http,73.0,1,1,false,109.0,63.0,3.0,75.0,80.0,true
+http://ihp.travesuras24-72.com/Ad32AdfffgDA9846984410HJUKK441015721AGHJUKK4441015721AGHJUKK441015741015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK/,http,10.0,0,0,false,10.0,21.0,17.0,-1.0,-1.0,true
+http://ihp.travesuras24-72.com/Ad32AdfffgDA9846984410HJUKK441015721AGHJUKK4441015721AGHJUKK441015741015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK441015721AGHJUKK/login/en/index.html,http,17.0,1,1,false,17.0,26.0,22.0,-1.0,-1.0,true
+

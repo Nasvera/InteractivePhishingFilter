@@ -1,0 +1,93 @@
+@relation Phishing.Detection
+
+@attribute protocol {http,https,other}
+@attribute FrequentTermsvsRegistrant integer
+@attribute NOofDomainNamecandidatesinHostnameandContent integer
+@attribute NOofDomainNamecandidatesinHostname integer
+@attribute NumericHostname {true,false}
+@attribute TitlevsRegistrant integer
+@attribute TitlevsDomainNamecandidatesinHostname integer
+@attribute FrequentTermsvsHostDomain integer
+@attribute CopyrightvsRegistrant integer
+@attribute DomainNamecandidatesinAnchorsvsRegistrant integer
+@attribute phising {true,false}
+@data 
+http,0.0,1,1,false,36.0,46.0,10.0,2.0,7.0,true
+http,6.0,1,1,false,21.0,48.0,11.0,7.0,-1.0,true
+http,6.0,1,1,false,21.0,41.0,11.0,7.0,-1.0,true
+http,0.0,1,1,false,36.0,46.0,10.0,2.0,7.0,true
+http,-1.0,1,0,false,-1.0,26.0,0.0,-1.0,-1.0,true
+https,-1.0,30,30,false,-1.0,120.0,13.0,-1.0,-1.0,true
+http,5.0,0,0,false,5.0,9.0,9.0,-1.0,-1.0,true
+http,-1.0,0,0,false,-1.0,15.0,15.0,-1.0,-1.0,true
+http,18.0,0,0,false,18.0,79.0,7.0,-1.0,-1.0,true
+http,-1.0,0,0,false,-1.0,6.0,6.0,-1.0,-1.0,true
+http,42.0,0,0,false,42.0,35.0,35.0,-1.0,-1.0,true
+http,6.0,1,1,false,21.0,48.0,11.0,7.0,-1.0,true
+http,21.0,0,0,false,21.0,13.0,9.0,-1.0,-1.0,true
+http,21.0,0,0,false,21.0,13.0,9.0,-1.0,-1.0,true
+http,6.0,1,1,false,21.0,51.0,11.0,-1.0,-1.0,true
+http,7.0,0,0,false,71.0,83.0,8.0,9.0,17.0,true
+http,5.0,1,1,false,17.0,31.0,21.0,6.0,-1.0,true
+http,13.0,5,5,false,31.0,33.0,15.0,13.0,21.0,true
+http,8.0,0,0,false,30.0,35.0,9.0,-1.0,-1.0,true
+http,35.0,1,1,false,35.0,28.0,4.0,-1.0,-1.0,true
+http,10.0,5,5,false,18.0,22.0,10.0,-1.0,-1.0,true
+http,16.0,0,0,false,16.0,14.0,14.0,-1.0,-1.0,true
+http,16.0,0,0,false,16.0,14.0,14.0,-1.0,-1.0,true
+http,18.0,0,0,false,18.0,79.0,7.0,-1.0,-1.0,true
+http,10.0,5,5,false,18.0,18.0,10.0,-1.0,-1.0,true
+http,10.0,5,5,false,18.0,18.0,10.0,-1.0,-1.0,true
+http,6.0,1,1,false,21.0,47.0,11.0,-1.0,-1.0,true
+http,6.0,1,1,false,21.0,47.0,11.0,-1.0,-1.0,true
+http,12.0,1,1,false,21.0,21.0,4.0,-1.0,-1.0,true
+http,38.0,5,5,false,114.0,91.0,11.0,36.0,-1.0,true
+http,-1.0,1,1,false,-1.0,11.0,4.0,-1.0,-1.0,true
+http,8.0,0,0,false,8.0,17.0,17.0,-1.0,-1.0,true
+http,13.0,1,1,false,25.0,31.0,15.0,14.0,-1.0,true
+http,11.0,0,0,false,11.0,14.0,10.0,-1.0,-1.0,true
+http,5.0,1,1,false,16.0,19.0,8.0,-1.0,12.0,true
+http,10.0,0,0,false,18.0,98.0,19.0,-1.0,-1.0,true
+http,-1.0,0,0,false,-1.0,31.0,6.0,-1.0,-1.0,true
+http,-1.0,0,0,false,-1.0,16.0,3.0,-1.0,-1.0,true
+http,6.0,0,0,false,53.0,53.0,6.0,-1.0,-1.0,true
+http,6.0,0,0,false,53.0,53.0,6.0,-1.0,-1.0,true
+http,10.0,1,1,false,10.0,24.0,20.0,-1.0,-1.0,true
+http,18.0,5,5,false,87.0,92.0,17.0,20.0,26.0,true
+http,38.0,5,5,false,114.0,91.0,11.0,36.0,-1.0,true
+http,9.0,2,2,false,19.0,28.0,18.0,-1.0,17.0,true
+http,74.0,1,1,false,99.0,45.0,3.0,75.0,79.0,true
+http,-1.0,1,1,false,-1.0,53.0,13.0,-1.0,-1.0,true
+http,18.0,1,1,false,30.0,38.0,22.0,-1.0,-1.0,true
+http,-1.0,0,0,false,-1.0,39.0,26.0,-1.0,-1.0,true
+http,-1.0,0,0,false,-1.0,7.0,2.0,-1.0,-1.0,true
+http,20.0,1,1,true,44.0,35.0,4.0,22.0,-1.0,true
+http,21.0,2,2,false,31.0,23.0,13.0,-1.0,29.0,true
+http,9.0,28,28,false,35.0,30.0,10.0,-1.0,17.0,true
+http,9.0,0,0,false,9.0,22.0,9.0,-1.0,-1.0,true
+http,17.0,0,0,false,31.0,23.0,5.0,-1.0,-1.0,true
+http,13.0,0,0,false,27.0,29.0,15.0,-1.0,-1.0,true
+http,15.0,0,0,false,33.0,2.0,2.0,-1.0,23.0,true
+http,14.0,0,0,false,28.0,33.0,19.0,-1.0,-1.0,true
+http,9.0,0,0,false,9.0,13.0,9.0,-1.0,-1.0,true
+http,3.0,1,1,false,20.0,38.0,17.0,-1.0,10.0,true
+http,6.0,1,1,false,21.0,43.0,11.0,7.0,-1.0,true
+http,6.0,1,1,false,21.0,43.0,11.0,7.0,-1.0,true
+http,6.0,1,1,false,21.0,51.0,11.0,-1.0,-1.0,true
+http,35.0,0,0,false,35.0,22.0,17.0,-1.0,-1.0,true
+http,10.0,0,0,false,10.0,16.0,12.0,-1.0,-1.0,true
+http,5.0,0,0,false,5.0,10.0,10.0,-1.0,-1.0,true
+http,9.0,0,0,false,23.0,34.0,20.0,-1.0,28.0,true
+http,-1.0,0,0,false,-1.0,41.0,9.0,-1.0,-1.0,true
+http,21.0,0,0,false,21.0,10.0,10.0,-1.0,-1.0,true
+http,18.0,1,1,false,30.0,34.0,22.0,-1.0,-1.0,true
+http,17.0,0,0,false,31.0,42.0,28.0,-1.0,-1.0,true
+http,-1.0,1,1,false,-1.0,95.0,12.0,-1.0,-1.0,true
+http,5.0,1,1,false,17.0,31.0,21.0,6.0,-1.0,true
+http,18.0,1,1,false,32.0,28.0,14.0,20.0,25.0,true
+http,10.0,0,0,false,10.0,20.0,16.0,-1.0,-1.0,true
+http,0.0,1,1,false,6.0,27.0,11.0,0.0,10.0,true
+http,12.0,1,1,false,27.0,36.0,14.0,-1.0,-1.0,true
+http,10.0,1,1,false,19.0,39.0,22.0,-1.0,-1.0,true
+http,-1.0,1,1,false,-1.0,29.0,4.0,-1.0,-1.0,true
+
