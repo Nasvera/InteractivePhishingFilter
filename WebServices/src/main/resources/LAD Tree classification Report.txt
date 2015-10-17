@@ -1,0 +1,79 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.LADTree -B 10
+Relation:     Phishing.Detection-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    1761
+Attributes:   11
+              protocol
+              FrequentTermsvsRegistrant
+              NOofDomainNamecandidatesinHostnameandContent
+              NOofDomainNamecandidatesinHostname
+              NumericHostname
+              TitlevsRegistrant
+              TitlevsDomainNamecandidatesinHostname
+              FrequentTermsvsHostDomain
+              CopyrightvsRegistrant
+              DomainNamecandidatesinAnchorsvsRegistrant
+              phising
+Test mode:split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+weka.classifiers.trees.LADTree:
+
+: 0,0
+|  (1)NOofDomainNamecandidatesinHostname < 1.5: 0.559,-0.559
+|  |  (2)protocol = https: -1.907,1.907
+|  |  (2)protocol != https: 0.275,-0.275
+|  (1)NOofDomainNamecandidatesinHostname >= 1.5: -0.722,0.722
+|  |  (4)NOofDomainNamecandidatesinHostnameandContent < 5.5: 0.6,-0.6
+|  |  (4)NOofDomainNamecandidatesinHostnameandContent >= 5.5: -0.302,0.302
+|  |  (6)protocol = http: 0.239,-0.239
+|  |  (6)protocol != http: -0.567,0.567
+|  (3)DomainNamecandidatesinAnchorsvsRegistrant < 0.5: 0.522,-0.522
+|  (3)DomainNamecandidatesinAnchorsvsRegistrant >= 0.5: -0.391,0.391
+|  |  (5)FrequentTermsvsHostDomain < 3.5: 0.879,-0.879
+|  |  (5)FrequentTermsvsHostDomain >= 3.5: -0.196,0.196
+|  |  (10)DomainNamecandidatesinAnchorsvsRegistrant < 26.5: 0.064,-0.064
+|  |  (10)DomainNamecandidatesinAnchorsvsRegistrant >= 26.5: -0.408,0.408
+|  (7)TitlevsRegistrant < 41.5: 0.167,-0.167
+|  |  (8)TitlevsDomainNamecandidatesinHostname < 21.5: -0.451,0.451
+|  |  (8)TitlevsDomainNamecandidatesinHostname >= 21.5: 0.238,-0.238
+|  |  |  (9)FrequentTermsvsRegistrant < 6.5: -0.391,0.391
+|  |  |  (9)FrequentTermsvsRegistrant >= 6.5: 0.202,-0.202
+|  (7)TitlevsRegistrant >= 41.5: -0.286,0.286
+Legend: true, false
+#Tree size (total): 31
+#Tree size (number of predictor nodes): 21
+#Leaves (number of predictor nodes): 15
+#Expanded nodes: 100
+#Processed examples: 75270
+#Ratio e/n: 752.7
+
+Time taken to build model: 0.11 seconds
+
+=== Evaluation on test split ===
+=== Summary ===
+
+Correctly Classified Instances         322               91.4773 %
+Incorrectly Classified Instances        30                8.5227 %
+Kappa statistic                          0.8299
+Mean absolute error                      0.1595
+Root mean squared error                  0.2622
+Relative absolute error                 32.0241 %
+Root relative squared error             52.5666 %
+Total Number of Instances              352     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.963     0.127      0.867     0.963     0.913      0.965    true
+                 0.873     0.037      0.965     0.873     0.917      0.965    false
+Weighted Avg.    0.915     0.079      0.92      0.915     0.915      0.965
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 157   6 |   a = true
+  24 165 |   b = false
+
