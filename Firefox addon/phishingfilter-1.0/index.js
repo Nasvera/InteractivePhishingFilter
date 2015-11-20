@@ -1,8 +1,5 @@
 require("sdk/tabs").on("ready", logURL);
 
-
-var domain_list = [".com",".net",".org",".uk",".in",".us"];
-var search_engine = ["www.google.com","r.search.yahoo.com","www.bing.com","search.yahoo.com"];
 var buttons = require('sdk/ui/button/action');
 
 
@@ -10,8 +7,8 @@ var buttons = require('sdk/ui/button/action');
 var page_title;
 var page_url;
 var button = buttons.ActionButton({
-  id: "mozilla-link",
-  label: "Visit Mozilla",
+  id: "phishing-filter",
+  label: "Phishing Filter",
   icon: {
     "16": "./icon-16.png",
     "32": "./icon-32.png",
@@ -34,12 +31,7 @@ const prefs = require("simple-prefs");
 
 function logURL(tab) {  
 
-  var parameter_1 = false;    // similarity betweeen title and url
-  var parameter_2 = false;    // Presense of Port number and IP address in URL
-  var parameter_3 = false;    // Secure connection
-  var parameter_4 = false;    // multiple domains emebedded in hostname
-  var parameter_5 = false;    // presence of obfuscation with unusual character.
-  var parameter_6 = false;    // domains embedded in url except hostnmae
+  var start = new Date();
 
   var url = require("sdk/url").URL(tab.url);
   var pathname = url.pathname;
@@ -49,8 +41,6 @@ function logURL(tab) {
   page_title = tab.title;
     
   
-  console.log("websiteurl ::: "  + url );
-  //console.log("")
   var isPhishing = true;
   
   var webapiurl = "http://localhost:8090/phishing/isPhishing?websiteUrl=" + url;
@@ -58,12 +48,13 @@ function logURL(tab) {
   var latestTweetRequest = Request({
   url: webapiurl,
   onComplete: function (response) {
+
+    var time = new Date() - start;
+
+    console.log("Totla time taken :: " + time);
+
     var website = response.json;
-    console.log("Isphishing: " + website.isPhishing);
-    console.log("Protocol " + website.protocol);
     isPhishing = website.isPhishing;
-    //string_name = website.singer;
-    //console.log("String value is :: " + string_name);
     var response_para =   "protocol=" + website.protocol + "&" 
     					+ "frequentTermsvsRegistrant=" + website.frequentTermsvsRegistrant + "&"
     					+ "noofDomainNamecandidatesinHostnameandContent=" + website.noofDomainNamecandidatesinHostnameandContent + "&"
@@ -84,10 +75,10 @@ function logURL(tab) {
 
       var flags = prompts.BUTTON_POS_0 * prompts.BUTTON_TITLE_SAVE +
                   prompts.BUTTON_POS_1 * prompts.BUTTON_TITLE_CANCEL;
-      // This value of flags will create 3 buttons. The first will be "Save", the
+      // This value of flags will create 2 buttons. The first will be "Save", the
       // second will be the value of aButtonTitle1, and the third will be "Cancel"
 
-      var button1 = prompts.confirmEx(null, "Phishing Attack Ahead!!!", "This Website might contain some unwanted code which may try to theft you confideintial data whihout of your knowledge. If you feel that this website is safe and secure to use then press \"Continue\" otherwise press \"Cancel\".",
+      var button1 = prompts.confirmEx(null, "Phishing Attack Ahead!!!", "This Website might contain some unwanted code which may try to theft you confideintial data whihout of your knowledge. If you feel that this website is safe and secure to use, then press \"Continue\" otherwise press \"Cancel\".",
                                      flags, "", "", "", null, check);
       console.log("Pressed Button is :" + button1);
       button.state(button, differentState);
@@ -100,13 +91,10 @@ function logURL(tab) {
       }
 
       var webapiurl1 = "http://localhost:8090/phishing/isPhishing/update?websiteUrl=" + url + "&" + response_para;
-      console.log("URL is :: " + webapiurl1);
       var latestTweetRequest1 = Request({
 		  url: webapiurl1,
 		  onComplete: function (response) {
 		    var tweet = response.json;
-		    console.log("Done " + tweet.title );
-		    console.log("Tweet: " + tweet.singer);
 		  }
 	  }).post();
 
@@ -117,7 +105,7 @@ function logURL(tab) {
 
   }
   }).get();
-
+  
 
 }
 
