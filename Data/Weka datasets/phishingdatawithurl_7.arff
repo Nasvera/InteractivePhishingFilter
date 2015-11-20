@@ -1,0 +1,82 @@
+@relation Phishing.Detection
+
+@attribute protocol {http,https,other}
+@attribute FrequentTermsvsRegistrant integer
+@attribute NOofDomainNamecandidatesinHostnameandContent integer
+@attribute NOofDomainNamecandidatesinHostname integer
+@attribute NumericHostname {true,false}
+@attribute TitlevsRegistrant integer
+@attribute TitlevsDomainNamecandidatesinHostname integer
+@attribute FrequentTermsvsHostDomain integer
+@attribute CopyrightvsRegistrant integer
+@attribute DomainNamecandidatesinAnchorsvsRegistrant integer
+@attribute phising {true,false}
+@data 
+http://www.micrommachining.com/co/go,http,10.0,5,5,false,67.0,68.0,17.0,-1.0,-1.0,true
+http://pittsburghcleaningservices.net/wp-content/themes/twentyten/xls/,http,11.0,0,0,false,39.0,2.0,2.0,-1.0,19.0,true
+http://www.logistic.tj/images/M_images/re/fdc33557182a4cebf89ac82c14c70e860899524c/,http,-1.0,1,1,false,-1.0,18.0,9.0,-1.0,-1.0,true
+http://www.loadweb.com.br/de/adobe/,http,8.0,1,1,false,24.0,32.0,4.0,-1.0,-1.0,true
+http://www.reliablereachreview.com/wp-admin/images/doc/fox/dropbox,http,8.0,1,1,false,23.0,40.0,21.0,-1.0,-1.0,true
+http://www.tfta.org/admin/word/images/75U/fc31234d6febf668256250d524406485/,http,11.0,3,3,false,33.0,32.0,6.0,-1.0,-1.0,true
+http://www.zabycreations.com/wowworgenlevelingguide.com/wp-content/plugins/unstopas_related_sites/homezone/homezone,http,11.0,0,0,false,24.0,32.0,15.0,13.0,17.0,true
+http://semlerresearch.com/media/if,http,20.0,1,1,false,30.0,26.0,16.0,-1.0,28.0,true
+http://www.bitcoinsgonewild.com/folddoc/dropbox/dpbx/,http,9.0,1,1,false,24.0,37.0,18.0,-1.0,-1.0,true
+http://www.tfta.org/admin/word/images/75U/9c1f64b4b70f1291ef8a3c3c26467075,http,11.0,3,3,false,33.0,32.0,6.0,-1.0,-1.0,true
+http://cad13.com.br/4g/,http,-1.0,0,0,false,-1.0,25.0,5.0,-1.0,-1.0,true
+http://ssl-google-chas.com.64mayappledrive.com/chase/index.htm,http,8.0,0,0,false,8.0,37.0,17.0,-1.0,-1.0,true
+http://excelairmechanical.ca/verification/,http,-1.0,0,0,false,-1.0,19.0,19.0,-1.0,-1.0,true
+http://www.dalil-dz.com/wp-admin/main/great/,http,12.0,0,0,false,12.0,14.0,10.0,-1.0,-1.0,true
+http://whykkj.com/l/,http,8.0,0,0,false,8.0,8.0,8.0,-1.0,-1.0,true
+http://www.jimenaaznar.com/milos/viewdocument/dropbox/,http,7.0,1,1,false,25.0,32.0,13.0,-1.0,-1.0,true
+http://bxi-banorte.bn-sis.com/portal/personas/,http,9.0,0,0,false,40.0,45.0,8.0,-1.0,-1.0,true
+http://www.marigsurgicalco.com/a-dropbox/dropbox/,http,11.0,1,1,false,26.0,36.0,17.0,-1.0,-1.0,true
+http://marigsurgicalco.com/a-dropbox/dropbox/index.php,http,11.0,1,1,false,26.0,32.0,17.0,-1.0,-1.0,true
+http://ukmpakarunding.my/http:/www.citibank.com.br/,http,-1.0,1,1,false,-1.0,41.0,15.0,-1.0,-1.0,true
+http://108.179.252.150/~ponto671/,http,16.0,0,0,true,57.0,54.0,5.0,-1.0,-1.0,true
+http://www.fasebock.ml/,http,-1.0,1,1,false,-1.0,60.0,9.0,-1.0,-1.0,true
+http://dhaainkanbaa.com/sites/default/FalabelaPeru/,http,12.0,38,38,false,41.0,29.0,11.0,12.0,21.0,true
+http://southdevon.biz/gdocsfiles/dpbx/form.php,http,10.0,1,1,false,10.0,12.0,12.0,-1.0,-1.0,true
+http://www.iihtjaipur.com/templates/beez/AreaSeguraBradescoDiaeNoite/cache=12=l/search=links&biw=1200&bih=1&tbm=isch&imgil/acessar/?UL4BRGJFR4LF5F557CI5Q20M81BILBRGXUSOBB53,http,10.0,0,0,false,21.0,27.0,12.0,-1.0,-1.0,true
+http://ragums.com/includes/manager/all/aollogin.psp.htm,http,15.0,1,1,false,39.0,33.0,9.0,-1.0,19.0,true
+http://cutt.us/update-security-info-your-account,http,43.0,0,0,false,43.0,36.0,36.0,-1.0,-1.0,true
+http://protect01-001-site1.hostbuddy.com/,http,6.0,1,1,false,21.0,46.0,11.0,7.0,-1.0,true
+http://www.222hermann.com/wp-admin/acl/doc/hkkk/db/,http,10.0,1,1,false,25.0,31.0,12.0,-1.0,-1.0,true
+http://private-client-arrea-access-intl.payments.com-cid145781224541100025400.bravodemoris.com/39ce836ca66ed95e010817f9ca2baae2/websc.php,http,10.0,0,0,false,18.0,98.0,19.0,-1.0,-1.0,true
+http://usaa.com-inet-verify-online-access-logon-redirectjsp-true.cecisbodyshop.com/inet-ent_logon_Logon-redirectjsp=true/question.php,http,11.0,1,1,false,33.0,95.0,15.0,13.0,17.0,true
+http://www.fusionbazaar.in/admin/mgs/es/index.php,http,18.0,1,1,false,27.0,26.0,13.0,-1.0,-1.0,true
+http://nuzhatour.com/wp-content/uploads/2015/aol/index.htm,http,16.0,0,0,false,30.0,26.0,12.0,-1.0,-1.0,true
+http://protect02-001-site1.hostbuddy.com/,http,6.0,1,1,false,21.0,46.0,11.0,7.0,-1.0,true
+http://ortodonciaperezvarela.com/wp-content/themes/ammon/admin/img/Webapps/e6b1a59269/,http,11.0,0,0,false,69.0,81.0,23.0,14.0,14.0,true
+http://brainhealth.me/wp-admin/frank/update.htm,http,3.0,1,1,false,27.0,37.0,13.0,-1.0,7.0,true
+http://www.footcareaustin.com/wp-admin/images/mmnbvc/Copy.php/,http,13.0,1,1,false,24.0,31.0,16.0,-1.0,20.0,true
+http://www.vijaymetalworks.com/bombay1/acctupdate.html,http,8.0,1,1,false,17.0,30.0,17.0,-1.0,15.0,true
+http://www.vijaymetalworks.com/larry1/acctupdate.html,http,8.0,1,1,false,17.0,30.0,17.0,-1.0,15.0,true
+http://www.childrensplaysets.org/lam/file/contactform.php,http,13.0,1,1,false,13.0,23.0,19.0,-1.0,-1.0,true
+http://boston-grill.mobi/kundata/index.html,http,12.0,1,1,false,23.0,26.0,15.0,-1.0,19.0,true
+http://www.plutopac.com/alomarad/dpbx/,http,9.0,1,1,false,24.0,29.0,10.0,-1.0,-1.0,true
+http://www.avprofessionals.co.uk/wp-admin/includes/up/3f1d8847b9b10f4d113e7ad00d60319f/,http,9.0,0,0,false,9.0,23.0,3.0,-1.0,-1.0,true
+http://www.methodeplein.nl/templates/system/css/usaa.html,http,-1.0,1,1,false,-1.0,96.0,13.0,-1.0,-1.0,true
+http://picscore.com/plugins/countto/dropboxjancag/index.php,http,15.0,1,1,false,30.0,25.0,10.0,-1.0,-1.0,true
+http://brainhealth.me/wp-admin/erute/update.htm,http,3.0,1,1,false,27.0,37.0,13.0,-1.0,7.0,true
+http://www.almutahedgroup.com/offerorder,http,12.0,1,1,false,21.0,29.0,16.0,-1.0,-1.0,true
+http://tamilnadu-hotels.com/ayo,http,14.0,26,26,false,78.0,64.0,18.0,16.0,21.0,true
+http://gjmax.com/~atingind/dropforreal/dropforreal/index.php,http,7.0,1,1,false,22.0,22.0,7.0,-1.0,-1.0,true
+http://institutoglobal.net/zaes/1015doc,http,2.0,5,5,false,16.0,30.0,18.0,-1.0,-1.0,true
+http://reinhards.sf-kunden.de/templates/ja_purity/js/cache/others,http,-1.0,2,2,false,-1.0,37.0,10.0,-1.0,-1.0,true
+http://rccpk.com/wp-includes/js,http,12.0,1,1,false,49.0,44.0,7.0,14.0,23.0,true
+http://dentistindallas.org/,http,14.0,0,0,false,14.0,17.0,17.0,-1.0,-1.0,true
+http://de-ffacebook-log-in-php.blogspot.fr/,http,23.0,0,0,false,53.0,55.0,11.0,23.0,31.0,true
+http://de-ffacebook-log-in-php.blogspot.dk/,http,10.0,0,0,false,40.0,55.0,11.0,10.0,18.0,true
+http://de-ffacebook-log-in-php.blogspot.be/,http,61.0,0,0,false,91.0,55.0,11.0,61.0,69.0,true
+http://documentreview.gisellevaldesrodriguez.com/000d9211adacea5aab2c517e4070908f/other.htm,http,18.0,1,1,false,29.0,50.0,24.0,-1.0,-1.0,true
+http://box.checkitnowonline.com/box/index.php,http,18.0,1,1,false,33.0,35.0,18.0,-1.0,-1.0,true
+http://www.pezeshkashna.com/wp-content/languages/google/c698cc0a2fbf2166c7e699396f170733/,http,10.0,95,95,false,34.0,42.0,14.0,-1.0,12.0,true
+http://www.bankingcaixafacil.cf/ouvidoria/,http,6.0,3,1,false,23.0,4.0,0.0,-1.0,23.0,true
+http://189.1.162.249/SIIBC/index.processa/,http,-1.0,1,1,true,-1.0,39.0,5.0,-1.0,-1.0,true
+http://vcorj.ulim.md/wp-includes/languages/.en_us/ymm,http,-1.0,0,0,false,-1.0,11.0,5.0,-1.0,-1.0,true
+http://bit.ly/1UJL6gh,http,-1.0,0,0,false,-1.0,4.0,4.0,-1.0,-1.0,true
+http://datoslimpios.org/imagenes/red.html,http,10.0,0,0,false,10.0,14.0,14.0,-1.0,-1.0,true
+http://www.admstestserver2.info/newpaypal/,http,32.0,1,1,false,62.0,52.0,18.0,-1.0,42.0,true
+https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=12&ct=1442394550&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fmail.live.com%2Fdefault.aspx%3Frru%3Dinbox&lc=1033&id=64855&mkt=en-US&cbcxt=mai,https,18.0,0,0,false,23.0,17.0,6.0,-1.0,-1.0,true
+http://www.picscore.com/plugins/countto/dropboxjancag/,http,15.0,1,1,false,30.0,29.0,10.0,-1.0,-1.0,true
+

@@ -1,0 +1,88 @@
+@relation Phishing.Detection
+
+@attribute protocol {http,https,other}
+@attribute FrequentTermsvsRegistrant integer
+@attribute NOofDomainNamecandidatesinHostnameandContent integer
+@attribute NOofDomainNamecandidatesinHostname integer
+@attribute NumericHostname {true,false}
+@attribute TitlevsRegistrant integer
+@attribute TitlevsDomainNamecandidatesinHostname integer
+@attribute FrequentTermsvsHostDomain integer
+@attribute CopyrightvsRegistrant integer
+@attribute DomainNamecandidatesinAnchorsvsRegistrant integer
+@attribute phising {true,false}
+@data 
+http://www.hickoryhilldaycamp.com/zip/honorable/adobe/user/login/index.htm,http,11.0,1,1,false,27.0,40.0,20.0,-1.0,-1.0,true
+http://www.nashvillestarboundtalentshowcase.com/wp-includes/document,http,7.0,5,5,false,15.0,47.0,35.0,-1.0,-1.0,true
+http://kalappilaagencies.in/err,http,1.0,1,1,false,37.0,54.0,18.0,3.0,8.0,true
+http://kinggsex29.gq/ccmy/,http,-1.0,1,1,false,-1.0,28.0,11.0,-1.0,-1.0,true
+http://13453765871837679316.googlegroups.com/attach/5ed5d019a6363180/docfile..htm?amp&amp;part=0.1&amp;view=1&amp;vt=ANaJVrH6P2TqHq-FYu1JscP4LeXduJFXp33tugIMUvWJ3CE_3GPs6Iac6pdsHcTrW_c3ztr_1rwtjR1gajbNjDc_7AOPkorapqtmC82z6oL6CYnoUCxSdvw,http,7.0,1,1,false,7.0,35.0,14.0,-1.0,17.0,true
+http://ambulanceamsf.com/sfr/mon-espace-client/facturation-sfr/08n4r0wn64r6w840rnw864r0wn64r0w4r0nw86r0/1385bd025370d9ecaa9e4f72639835db/,http,11.0,0,0,false,11.0,15.0,15.0,-1.0,-1.0,true
+http://dropbox.viewmyalbum.net/,http,8.0,1,1,false,23.0,28.0,13.0,-1.0,-1.0,true
+http://ambulanceamsf.com/sfr/mon-espace-client/facturation-sfr/08n4r0wn64r6w840rnw864r0wn64r0w4r0nw86r0/24dc3284daea876eb095315070ec6f02/,http,11.0,0,0,false,11.0,15.0,15.0,-1.0,-1.0,true
+http://synovusgroupng.com/templates/beez3/revalidate/,http,13.0,0,0,false,27.0,31.0,17.0,-1.0,-1.0,true
+http://synovusgroupng.com/templates/beez3/revalidate,http,13.0,0,0,false,27.0,31.0,17.0,-1.0,-1.0,true
+http://novumglobal.com/image/home,http,18.0,1,1,false,45.0,40.0,13.0,19.0,26.0,true
+http://degestiones.com/wp-includes/Chase/Chase/index.htm,http,5.0,0,0,false,5.0,13.0,13.0,-1.0,-1.0,true
+http://www.kuwabarapickups.com/menu/up,http,13.0,5,5,false,70.0,74.0,17.0,-1.0,-1.0,true
+http://g-stro.com/oham/opendocs/unlockfile/,http,18.0,1,1,false,26.0,18.0,8.0,-1.0,26.0,true
+http://www.driggersweb.com/media/mod_languages/images/finaly/home/account,http,9.0,1,1,false,28.0,36.0,13.0,-1.0,22.0,true
+http://www.bamelite.com.mx/d/asd/1.html,http,19.0,0,0,false,19.0,17.0,4.0,-1.0,-1.0,true
+http://sixebi.cf/login/en/login.html.asp?ref=https%3A%2F%2Fus.battle.net%2Faccount%2Fmanagement%2Findex.xml&app=bam,http,-1.0,0,0,false,-1.0,29.0,7.0,-1.0,-1.0,true
+http://sixebi.cf,http,-1.0,0,0,false,-1.0,29.0,7.0,-1.0,-1.0,true
+http://www.kanhakids.in/assets/TrueSi/,http,11.0,0,0,false,11.0,14.0,10.0,-1.0,-1.0,true
+http://www.kanhakids.in/assets/TrueSi/f14e4c2cd2f7f8d5f576815f982f2358/,http,11.0,0,0,false,11.0,14.0,10.0,-1.0,-1.0,true
+http://90acces.com/https.service/,http,10.0,1,1,false,20.0,19.0,9.0,-1.0,20.0,true
+http://qaggqce.cf/login/en/login.html.asp?ref=https%3A%2F%2Fus.battle.net%2Faccount%2Fmanagement%2Findex.xml&app=bam,http,-1.0,0,0,false,-1.0,30.0,8.0,-1.0,-1.0,true
+http://qaggqce.cf,http,-1.0,0,0,false,-1.0,30.0,8.0,-1.0,-1.0,true
+http://www.crazycockroach.com/wells/privates/questions.php,http,10.0,1,1,false,49.0,59.0,16.0,10.0,22.0,true
+http://www.crazycockroach.com/wells/privates/verification.php,http,10.0,1,1,false,40.0,50.0,16.0,10.0,16.0,true
+http://www.bigapplebasketball.com/cache/Domain/,http,9.0,0,0,false,9.0,24.0,20.0,-1.0,-1.0,true
+http://www.crazycockroach.com/wells/privates/wellsfargo-online.php,http,10.0,1,1,false,102.0,112.0,16.0,12.0,21.0,true
+http://boligrafospromocion.com.ar/listas/839DB3/index.php,http,-1.0,1,1,false,-1.0,39.0,4.0,-1.0,-1.0,true
+http://ajmesec.cf/login/en/login.html.asp?ref=https%3A%2F%2Fus.battle.net%2Faccount%2Fmanagement%2Findex.xml&app=bam,http,-1.0,0,0,false,-1.0,30.0,8.0,-1.0,-1.0,true
+http://ajmesec.cf,http,-1.0,0,0,false,-1.0,30.0,8.0,-1.0,-1.0,true
+http://webupgrade.webeden.co.uk/,http,27.0,1,1,false,35.0,28.0,3.0,29.0,-1.0,true
+http://www.egyptshuttletravel.com/plugins/authentication/TEFOLS,http,18.0,1,1,false,29.0,35.0,20.0,-1.0,-1.0,true
+http://www.lpv.cl/libraries/phputf8/mbstring/drop.bx/,http,-1.0,5,5,false,-1.0,13.0,4.0,-1.0,-1.0,true
+http://www.usonlineusaa.com/verify-account/e1f20fc1118369b2c30ecb36abb2288d/,http,9.0,1,1,false,70.0,79.0,14.0,11.0,15.0,true
+http://www.newlinemediaproductions.com/AOL/,http,13.0,0,0,false,13.0,29.0,25.0,-1.0,-1.0,true
+http://upgrade01-001-site1.hostbuddy.com/puvlic-inc-ss,http,6.0,1,1,false,21.0,46.0,11.0,7.0,-1.0,true
+http://server95.iabhost.com/~nishanth/My_account/update-your-paypal-account-information.BP0cHM6Ly9zZWN1cmUxLnN0b3JlLmFwcGxlLmNvbS94Zi9vcmRlci9saXN0P2hp/signin.php?cmd=d65b3d7d265f51aacc92a3d803031c5db9794732b2b2b9039f9ed8553e1d5ab4,http,6.0,0,0,false,20.0,33.0,10.0,-1.0,-1.0,true
+http://cevreorman.org.tr/v2/dergi/sayi002/home/4632970i5x/abs,http,30.0,0,0,false,63.0,48.0,4.0,-1.0,35.0,true
+http://www.secyt.frba.utn.edu.ar/wp-content/contentz/7f9caf0b3025a7b90788b62f384bbdc9,http,-1.0,5,5,false,-1.0,80.0,4.0,-1.0,-1.0,true
+http://www.aigc.tn/aolsecurity/,http,-1.0,1,1,false,-1.0,34.0,6.0,-1.0,-1.0,true
+http://www.golden-corner.com/bookmark/ii.php?.rand=13InboxLight.aspx?n=1774256418&amp;email=&amp;fav.1=&amp;fid=1&amp;fid=4&amp;fid.1=&amp;fid.1252899642=&amp;fid.4.1252899642=&amp;rand=13InboxLightaspxn.1774256418&amp;rand.13InboxLight.aspxn.1774256418=,http,8.0,1,1,false,91.0,102.0,15.0,10.0,11.0,true
+http://onthelinesites.com/wp-content/themes/lcll/5323bbf3d066bf3bb07194c02375d8d2,http,11.0,0,0,false,42.0,47.0,16.0,-1.0,-1.0,true
+http://onthelinesites.com/wp-content/themes/lcll/f5cd8bb440cdaa94d4ab09f4c5bd2a22,http,11.0,0,0,false,42.0,47.0,16.0,-1.0,-1.0,true
+http://crossbordercargo.com/,http,19.0,1,1,false,55.0,54.0,18.0,21.0,26.0,true
+http://www.secyt.frba.utn.edu.ar/wp-content/contentz/296ab1e1172aedfa14be65b341476289/,http,-1.0,5,5,false,-1.0,80.0,4.0,-1.0,-1.0,true
+http://www.secyt.frba.utn.edu.ar/wp-content/contentz/857bdf21ff24b71fa52f516570bfd0d9/,http,-1.0,5,5,false,-1.0,80.0,4.0,-1.0,-1.0,true
+http://www.golden-corner.com/make/bookmark/ii.php?rand=13InboxLightaspxn.1774256418&amp;fid.4.1252899642&amp;fid=1&amp;fav.1&amp;rand.13InboxLight.aspxn.1774256418&amp;fid.1252899642&amp;fid.1&amp;fav.1&amp;email=&amp;.rand=13InboxLight.aspx?n=1774256418&amp;fid=4,http,8.0,1,1,false,91.0,102.0,15.0,10.0,11.0,true
+http://www.vakilkhoj.com/law/wellsfargo/identity.php,http,9.0,0,0,false,23.0,30.0,12.0,-1.0,-1.0,true
+http://www.excise.gos.pk/components/com_search/views/search/tmpl/bomber/,http,14.0,5,5,false,23.0,24.0,4.0,16.0,-1.0,true
+http://www.invstcommercial.com/property/realinvest/view/share/,http,8.0,2,2,false,18.0,31.0,17.0,-1.0,16.0,true
+http://kumaritamil.com/wp-admin/css/colors/blue/nD,http,10.0,1,1,false,19.0,22.0,13.0,-1.0,-1.0,true
+http://www.crossbordercargo.com/call/,http,19.0,1,1,false,55.0,58.0,18.0,21.0,26.0,true
+http://excise.gos.pk/components/com_search/views/search/tmpl/bomber/index.htm,http,14.0,5,5,false,23.0,20.0,4.0,16.0,-1.0,true
+http://www.greenbeautyfarmsnoidaexpressway.com/hampton/dropbox/,http,4.0,1,1,false,19.0,52.0,33.0,-1.0,-1.0,true
+http://image-web.net/plugins/countto/dropboxjancag,http,15.0,1,1,false,30.0,26.0,11.0,-1.0,-1.0,true
+http://image-web.net/plugins/countto/dropboxjancag/,http,15.0,1,1,false,30.0,26.0,11.0,-1.0,-1.0,true
+http://mutouger.com/google/psp/note,http,0.0,1,1,false,9.0,19.0,10.0,-1.0,-1.0,true
+http://www.golden-corner.com/make/bookmark/ii.php?rand=13InboxLightaspxn.1774256418&fid.4.1252899642&fid=1&fav.1&rand.13InboxLight.aspxn.1774256418&fid.1252899642&fid.1&fav.1&email=&.rand=13InboxLight.aspx?n=1774256418&fid=4#n=1252899642&fid=1&fav=1,http,8.0,1,1,false,91.0,102.0,15.0,10.0,11.0,true
+http://www.golden-corner.com/make/bookmark/,http,8.0,1,1,false,91.0,102.0,15.0,10.0,11.0,true
+http://www.fighting-poverty.org/wp-includes/ID3/Mouvences/,http,12.0,0,0,false,12.0,22.0,18.0,-1.0,-1.0,true
+http://www.refrigeracionbarranquilla.com/dddddddd/dpbx/dpbx/,http,9.0,1,1,false,24.0,46.0,27.0,-1.0,-1.0,true
+http://www.xiscoqa.com/info4/itinseonect.appel.com.cgi.bin/16fc7a307d66354b249f39370bdf9b64/,http,21.0,0,0,false,21.0,13.0,9.0,-1.0,-1.0,true
+http://www.fiverrpremium.tk/,http,-1.0,0,0,false,-1.0,23.0,11.0,-1.0,-1.0,true
+http://msckkik.gq,http,-1.0,0,0,false,-1.0,30.0,8.0,-1.0,-1.0,true
+http://www.awtadco.com/remax/index.htm,http,9.0,49,49,false,16.0,20.0,9.0,-1.0,18.0,true
+http://remboursement-free.com/Go/bookmark/,http,10.0,1,1,false,28.0,40.0,20.0,-1.0,-1.0,true
+http://upgrade01-001-site1.hostbuddy.com/puvlic-inc-ss/??Get-help,http,6.0,1,1,false,21.0,46.0,11.0,7.0,-1.0,true
+http://qplace.com.au/zmark/bookmark/index.php?email=phkumanov-DVq%20YeWbj7cAvxtiuMwx3w,http,24.0,1,1,false,38.0,31.0,4.0,-1.0,-1.0,true
+http://kamitujien.jp/DICED/pineapple/,http,10.0,1,1,false,62.0,63.0,11.0,-1.0,25.0,true
+http://wwwfacebook-login-php.blogspot.it/,http,21.0,0,0,false,53.0,53.0,9.0,23.0,31.0,true
+http://facebook-log-in-php.blogspot.it/,http,21.0,0,0,false,41.0,39.0,9.0,23.0,31.0,true
+http://ca-facebook-com.blogspot.it/,http,21.0,0,0,false,48.0,42.0,9.0,23.0,31.0,true
+http://www.foreverhbcu.com/Chase/Chase/Logon.aspx/,http,10.0,1,1,false,28.0,35.0,13.0,-1.0,-1.0,true
+
