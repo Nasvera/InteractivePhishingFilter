@@ -1,0 +1,12 @@
+{
+  "title": "PhishingFilter",
+  "name": "interactivephishingfilter",
+  "version": "0.0.1",
+  "description": "Interactive Add-ons which detects Phishing Websites.",
+  "main": "index.js",
+  "author": "Rushikesh Joshi",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT"
+}
